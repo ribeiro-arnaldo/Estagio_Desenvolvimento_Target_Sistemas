@@ -1,6 +1,28 @@
+#Questao 1
+numero = int(input("Digite um número: ")) 
+a, b = 0, 1  
+while a < numero:
+    a, b = b, a + b
+if a == numero:
+    print(f"O número {numero} pertence à sequência de Fibonacci.")
+else:
+    print(f"O número {numero} não pertence à sequência de Fibonacci.")
 
 
-'Questao 3'
+#Questao 2
+entrada = input("O que deseja nos dizer? ")
+entrada_min = entrada.lower()
+qt_a = entrada_min.count('a')
+
+if qt_a == 1:
+    print("A letra 'a' aparece 1 vez na frase.")
+elif qt_a > 1:
+    print(f"A letra 'a' aparece {qt_a} vezes na frase.")
+else:
+    print("A letra 'a' não está presente na frase.")
+
+
+#Questao 3
 INDICE = 12
 SOMA = 0
 K = 1
